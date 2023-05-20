@@ -2,9 +2,9 @@
 
 Description: Tasked with updated design of an advertorial. 
 
-Original
-! [Original Design]
+## Original
 <img src="/img/original.png"
      alt="Original Design" />
-Updated
-! [Updated Design] (img/update.png)
+## Updated
+<img src="/img/update.png"
+     alt="Updated Design" />
