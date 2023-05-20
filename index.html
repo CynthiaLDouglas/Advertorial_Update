@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Advertorial - Dec 2022</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            // check email validity
+            $('form[name=emailSubscriptionForm] > input[name=email]').change(function () {
+                const emailRegExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (!!$(this).val() && !emailRegExp.test($(this).val())) {
+                    $(this)[0].setCustomValidity('Please enter a valid E-mail address.');
+                }
+            });
+
+            var urlParams;
+            (window.onpopstate = function () {
+                var match,
+                    pl = /\+/g,  // Regex for replacing addition symbol with a space
+                    search = /([^&=]+)=?([^&]*)/g,
+                    decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                    query = window.location.search.substring(1);
+
+                urlParams = {};
+                while (match = search.exec(query))
+                    urlParams[decode(match[1])] = decode(match[2]);
+            })();
+            function getNewSource(cid, eid) {
+                document.write('<a href=\"https://secure.empirefinancialresearch.com/?cid=' + cid + '&eid=' + eid + '&step=start" class=\"orderNowUpdate\">')
+            }
+        });
+    </script>
+    <style>
+
+@import url('https://rtr-prod-assets.s3.amazonaws.com/css/bootstrap-5.0.2.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+  font-family: "SF Pro Italic";
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro-Italic.eot');
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro-Italic.eot') format('embedded-opentype'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro-Italic.woff2') format('woff2'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro-Italic.woff') format('woff'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro.eot');
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro.eot') format('embedded-opentype'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro.woff2') format('woff2'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro.woff') format('woff'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/SFPro/SF-Pro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/MyriadPro/MyriadProBold.eot');
+  src: url('https://rtr-prod-assets.s3.amazonaws.com/fonts/MyriadPro/MyriadProBold.eot') format('embedded-opentype'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/MyriadPro/MyriadProBold.woff2') format('woff2'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/MyriadPro/MyriadProBold.woff') format('woff'),
+       url('https://rtr-prod-assets.s3.amazonaws.com/fonts/MyriadPro/MyriadProBold.ttf') format('truetype');
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, html {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+main>section {
+  background-color: #F4F5F5;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.logo img {
+  width: 100%;
+  max-width: 200px;
+}
+.hero {
+  width: 100%;
+  background: url('/img/iStock-155600635-min.jpg');
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center bottom;
+  background-size: cover;
+  height: 587px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headlines {
+  background-color: #F4F5F5;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .51);
+  border-radius: 35px;
+  width: 60%;
+  height: 60%;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headlines>* {
+  margin: 20px auto;
+  color: #1A4C90;
+  font-size: 1.7rem;
+}
+
+.headlines>h4:first-of-type {
+  margin-top: 0;
+}
+
+.headlines>h1 {
+  font-size: 5.4rem;
+  font-weight: 300;
+  font-family: 'SF Pro', Arial, Helvetica, sans-serif;
+}
+
+.main-content {
+  height: auto;
+  font-size: 2.7rem;
+}
+
+.main-content article {
+  padding: 65px 130px;
+  height: 100%;
+}
+
+.main-content h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 1.25em 0;
+  text-align: center;
+}
+
+.main-content h2 {
+  font-size: 4rem;
+  margin: 1.25em 0;
+  text-align: center;
+}
+
+.main-content h3 {
+  font-size: 3rem;
+  margin: 1.1em 0;
+}
+
+.main-content a {
+  color: #1A4C90;
+  font-weight: 700;
+}
+
+.main-content a:hover {
+  color: #4e1a40;
+}
+
+.main-content a:visited {
+  color: #d76608;
+}
+
+.main-content figure {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-content img.right {
+  float: right;
+  margin-left: 2%;
+  width: 100%;
+  max-width:375px;
+}
+
+.main-content img.left {
+  float: left;
+  margin-right: 2%;
+  width: 100%;
+  max-width:375px;
+}
+
+.main-content figure img {
+  width: 100%;
+  
+}
+
+.lead-gen {
+  background-color: #1A4C90;
+  height: 200px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead-gen .subscription-form {
+  margin: 0 auto;
+  font-size: 2.6rem;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lead-gen .subscription-form>* {
+  width: 100%;
+}
+
+.lead-gen section span {
+  font-weight: 900;
+}
+.subscription-form__title{
+  font-size: 2.25rem;
+}
+
+.input-group {
+  display: flex;
+  align-self: flex-end;
+  max-width: 420px;
+}
+
+input::placeholder {
+  font-size: 1.7rem;
+  color: #999;
+}
+
+button {
+  background-color: #939598;
+  width: 120px;
+  padding: 5px 15px;
+  color: #fff;
+}
+.subscription-form.subscription-form--main {
+  padding:0;
+}
+.subscription-form__text {
+  font-family: 'Myriad Pro', Helvetica, sans-serif;
+}
+/* footer styling starts here */
+.footer {
+  background-color: #fff;
+  padding: 25px 10px 15px 10px;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.footer__contact-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: 1199.98px) {
+  .footer__contact-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .footer__contact-box .logo {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer__contact-box .logo {
+    margin-left: 0;
+  }
+}
+
+.footer__contact-box .media-links {
+  font-size: 38px;
+  color: #dbdbdb;
+  margin-top: 10px;
+}
+
+@media (max-width: 1199.98px) {
+  .footer__contact-box .media-links {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    font-size: 31px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer__contact-box .media-links {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.footer__contact-box .media-links .media-link {
+  font-size: 31px;
+}
+
+.footer__contact-box .media-links .media-link:hover {
+  color: #1764b1;
+}
+
+.footer__bind-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__company-container {
+  margin-top: 40px;
+  max-width: 1035px;
+  width: 100%;
+}
+
+.footer__name {
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 767.98px) {
+  .footer__name {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1.3;
+    letter-spacing: 0.6px;
+  }
+}
+
+.footer__link {
+  position: relative;
+  font-size: 16px;
+  line-height: 1.54;
+  letter-spacing: 0.25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 991.98px) {
+  .footer__link {
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.25px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer__link:first-of-type {
+    padding-left: 0;
+  }
+}
+
+.footer__link--line {
+  border-left: 1px solid #4b4a4b;
+}
+
+.footer__text {
+  display: flex;
+  color: #4b4a4b;
+  font-size: 16px;
+}
+
+@media (max-width: 991.98px) {
+  .footer__text {
+    flex-flow: column-reverse;
+    color: #000;
+  }
+}
+
+.footer__description {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  line-height: 1.6;
+  color: #a9a8a9;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+  .footer__description {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+.line-footer {
+  width: 100%;
+  height: 6px;
+  background-color: #ececec;
+  margin-bottom: 31px;
+}
+
+.site-footer__paid .footer__link:first-child {
+  padding-left: 0;
+}
+
+.media-link {
+  transition: 0.2s;
+  font-size: 22px;
+  color: #dbdbdb;
+}
+
+.media-links {
+  display: flex;
+  margin: 0 -7px;
+}
+
+.media-icon {
+  margin: 0 7px;
+}
+
+/* End Footer */
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+  .logo {
+    height: 75px;
+    padding-bottom: 10px;
+  }
+
+  .logo div {
+    width: 100%;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  .hero {
+    height: 410px
+  }
+
+  .headlines h4 {
+    font-size: 1.5rem;
+  }
+
+  .headlines>h4:first-of-type {
+    margin-top: 10px;
+  }
+
+  .headlines>h1 {
+    font-size: 3.7rem;
+  }
+  .main-content {
+    font-size: 2.4rem;
+  }
+  .subscription-form.subscription-form--main {
+    padding: 0px 10px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .main-content article {
+    padding: 32.5px 65px;
+  }
+  .headlines {
+    width: 70%;
+  }
+  .headlines > h1 {
+    font-size: 3.2rem;
+  }
+}
+@media screen and (max-width: 665px) {
+  .subscription-form__title{
+    font-size: 1.65rem;
+  }
+ }
+@media screen and (max-width: 650px) {
+  .main-content article {
+    padding: 32.5px 65px;
+  }
+  .headlines {
+    width: 75%;
+  }
+  .headlines > h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+ .headlines > * {
+   margin: 10px auto;
+ }
+ .lead-gen .subscription-form {
+  flex-direction: column;
+  align-content:space-around;
+ }
+ .subscription-form__text {
+  text-align: center;
+  margin-bottom: 20px;
+ }
+}
+@media screen and (max-width: 375px) {
+  .headlines > h1 {
+    font-size: 2.8rem;
+  }
+ }
+@media screen and (max-width: 320px) {
+  .headlines > h1 {
+    font-size: 2.4rem;
+  }
+  .headlines h4 {
+    font-size: 1.45rem;
+  }
+  .main-content article {
+    padding: 20px 45px;
+}
+ }
+
+    </style>
+</head>
+
+<body>
+    <!-- Insert Design Here -->
+    <main>
+        <section class="logo">
+            <div style="display: flex;justify-content:center;align-items:center;flex-direction:column;">
+                <span
+                    style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; color: #C6C6C6; margin: 10px auto 0;">Advertisement</span>
+                <img alt="Empire Financial Research"
+                    src="https://assets.empirefinancialresearch.com/static/assets/efr-logo.png"
+                    style="padding-top:5px;margin: 0 auto 10px;" />
+                    <a style="margin-bottom:10px;" href="original.html">Click here to see Original Design</a>
+            </div>
+        </section>
+        <div class="hero">
+            
+            <div class="headlines">
+                <h4>Advertorial</h4>
+                <h1>A Clean Energy Transformation<br> in the Golden State</h1>
+                <h4>Wednesday, November 16, 2022 / By Whitney Tilson</h4>
+            </div>
+        </div>
+        <section class="main-content">
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates sunt dolor! Ullam
+                    facere,
+                    possimus ducimus quas, harum debitis numquam fugit ipsa commodi, deserunt consectetur?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam fuga provident similique voluptatibus
+                    voluptas voluptatem dolor? Cumque placeat nemo reiciendis dolorem, maxime magnam animi corporis
+                    dolores
+                    fugit fugiat exercitationem maiores voluptatem sit itaque fuga illo deserunt totam? Tempore,
+                    blanditiis
+                    vel! Natus molestias quos voluptate praesentium alias sint ipsa ex amet?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, delectus?</p>
+                <h1>Sample H1 Sample H1</h1>
+                <h2>Sample H2 Sample H2</h2>
+                <h3>Sample H3 Sample H3</h3>
+                <p>Sample Link: <a href="#">Click here to access content</a></p>
+                <h2>Centered Image</h2>
+                <figure>
+                    <img src="https://s3.amazonaws.com/assets.empirefinancialresearch.com/content/images/CSTeam.png"
+                        alt="">
+                </figure>
+
+                <h2>Left Image</h2>
+
+                <img class="left"
+                    src="https://s3.amazonaws.com/assets.empirefinancialresearch.com/content/images/CAN_MAR-2021/Tom-Circle+copy.png"
+                    alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ratione, optio atque eligendi totam
+                    eius impedit cupiditate molestiae ex, sequi alias, consequuntur modi aliquid asperiores ab natus.
+                    Neque, perspiciatis saepe aliquid aut esse fuga aspernatur inventore ad repudiandae! Tenetur earum
+                    sapiente aliquam architecto nisi esse sed id praesentium consequuntur omnis.</p>
+                <h2>Right Image</h2>
+                <img class="right"
+                    src="https://s3.amazonaws.com/assets.empirefinancialresearch.com/content/images/CAN_MAR-2021/Tom-Circle+copy.png"
+                    alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ratione, optio atque eligendi totam
+                    eius impedit cupiditate molestiae ex, sequi alias, consequuntur modi aliquid asperiores ab natus.
+                    Neque, perspiciatis saepe aliquid aut esse fuga aspernatur inventore ad repudiandae! Tenetur earum
+                    sapiente aliquam architecto nisi esse sed id praesentium consequuntur omnis.</p>
+            </article> 
+        </section>
+        <div class="lead-gen">
+            <div class="subscription-form subscription-form--main">
+                <h4 class="subscription-form__text">
+                    <span class="subscription-form__title"><span style="font-weight: bold;">Get</span> <em>Empire Financial Daily</em> <span style="font-weight: bold;">delivered straight to
+                            your inbox</span>.
+                </h4>
+                <form class="email-form input-group" action="https://signup.empirefinancialresearch.com/" method="GET"
+                    name="emailSubscriptionForm">
+                    <input type="hidden" name="cid" value="MKT572664" />
+                    <input type="hidden" name="eid" value="MKT574415" />
+                    <input type="hidden" name="assetId" value="AST200477" />
+                    <input class="form-control subscription-form__field" type="text" maxlength="256" required
+                        placeholder="E-mail Address" name="email" oninput="setCustomValidity('')" autocomplete="off" />
+                    <button class="button button--color-dark email-form__button" type="submit">
+                        <span class="button__text">Join</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="line-footer"></div>
+        <section class="footer">
+            <div class="box">
+                <div class="footer__contact-box">
+                    <div class="footer__bind-links">
+                        <div class="logo">
+                            <a href="/"><img class="site-logo"
+                                    src="https://empirefinancialresearch.com/assets/images/logo-dark.svg"></a>
+                        </div>
+
+                        <!-- Links to social networks -->
+                        <div class="media-links">
+                            <div class="media-icon"><a class="media-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://www.youtube.com/channel/UC7igQqc_-k3LWCeUGnpE7Cg">
+                                    <div class="icon"><i class="fab fa-youtube"></i></div>
+                                </a></div>
+                            <div class="media-icon"><a class="media-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://twitter.com/EmpireResearch">
+                                    <div class="icon"><i class="fab fa-twitter"></i></div>
+                                </a></div>
+                            <div class="media-icon"><a class="media-link" target="_blank" rel="noopener noreferrer"
+                                    href="https://www.facebook.com/EmpireFinancialResearch">
+                                    <div class="icon"><i class="fab fa-facebook-f"></i></div>
+                                </a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__company-container">
+                    <p class="footer__name"> &copy; 2022 Empire Financial Research. All rights reserved.</p>
+                    <div class="footer__menu-link">
+                        <a class="footer__link" href="/privacy-policy">Privacy Policy</a>
+                        <a class="footer__link footer__link--line" href="/terms-of-use">Terms of Use</a>
+                        <a class="footer__link footer__link--line" href="/privacy-policy#adchoice">Ad Choices</a>
+                        <a class="footer__link footer__link--line" href="/dmca">DMCA Policy</a>
+                        <a class="footer__link footer__link--line"
+                            href="https://beaconstreet-privacy.my.onetrust.com/webform/c246f198-7123-4766-b29c-917342eff0f7/2b896e90-30ad-4a13-ae4f-ab9099a48505"
+                            target="_blank">Do Not Sell My Personal Information</a>
+                        <a class="footer__link footer__link--line" href="#"
+                            onclick="window.Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')">Cookie Preferences</a>
+                    </div>
+                </div>
+                <p class="footer__description">Protected by copyright laws
+                    of the United States and international treaties. This website may only be used pursuant to the
+                    subscription
+                    agreement and any reproduction, copying, or redistribution (electronic or otherwise, including on
+                    the world
+                    wide web), in whole or in part, is strictly prohibited without the express written permission of
+                    Empire
+                    Financial Research.
+                </p>
+            </div>
+        </section>
+    </main>
+    <script src="https://secure-prod-assets.s3.amazonaws.com/common/fontawesome/js/all.js"></script>
+</body>
+
+</html>
